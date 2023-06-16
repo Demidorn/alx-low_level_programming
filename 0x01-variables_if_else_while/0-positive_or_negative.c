@@ -23,11 +23,11 @@ int main(void)
 	}
 	else if (n == 0)
 	{
-		printf("is zero\n");
+		printf(" is zero\n");
 	}
 	else
 	{
-		printf("is negative\n");
+		printf(" is negative\n");
 	}
 	return (0);
 }
