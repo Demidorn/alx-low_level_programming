@@ -10,17 +10,11 @@
 
 int main(void)
 {
-	int x = 0;
-	while (x < 10)
-	{
-		putchar(x + '0');
+	int d;
 
-		if (x < 9)
-		{
-			putchar(x++);
-		}
-	}
-	putchar('\n');
+	for (d = 0; d < 10; d++)
+		printf("%d", d);
+	printf("\n");
 
 	return (0);
 }
