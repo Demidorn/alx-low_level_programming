@@ -5,10 +5,11 @@
  *
  ** Return: void
  */
+
 void print_alphabet(void)
 {
 	char ness = 'a';
-	while(ness <= 'z')
+	while (ness <= 'z')
 	{
 		_putchar(ness);
 		ness++;
