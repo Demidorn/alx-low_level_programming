@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Return: Always 0
+ * Return: void
  */
 
 void print_alphabet_x10(void)
@@ -13,9 +13,10 @@ void print_alphabet_x10(void)
 
 	for (j = 1; j <= 10; j++)
 	{
-		for(s = 97; s <= 122; s++)	
-		_putchar('%c\n', s);
+		for (s = 97; s <= 122; s++)
+		{
+			_putchar(s);
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
-	
 }
