@@ -2,7 +2,7 @@
 
 /*
  * main - Entry point
- * Description: A program that prints _putchar, followed by a new line
+ * Description: Prints character to sdtout
  *
  ** Return: Always 0 (success)
  */
