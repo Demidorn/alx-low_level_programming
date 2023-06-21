@@ -1,9 +1,8 @@
 #include "main.h"
 
-/*
+/**
  * main - Entry point
- * Description: Prints character to sdtout
- *
+ * Description: Prints _putchar followed by new line
  ** Return: Always 0 (success)
  */
 
