@@ -6,7 +6,7 @@
  * Return: Always 0 (success)
  */
 
-int _abs(int)
+int main(void)
 {
 	int x = -6, y;
 
