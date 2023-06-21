@@ -9,6 +9,7 @@
 void print_alphabet(void)
 {
 	char ness = 'a';
+
 	while (ness <= 'z')
 	{
 		_putchar(ness);
