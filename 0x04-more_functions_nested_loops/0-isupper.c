@@ -9,7 +9,7 @@
 
 int _isupper(int c)
 {
-	if (ispuuer(c))
+	if (isupper(c))
 	{
 		return (1);
 	}
