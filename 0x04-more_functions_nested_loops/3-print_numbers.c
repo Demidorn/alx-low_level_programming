@@ -2,8 +2,8 @@
 
 /**
  * _numbers - prints numbers from 0 to 9 
- *
- * Return: void
+ * @j: character used to check 
+ * Return: Numbers 0 upto 9
  */
 
 void print_numbers(void)
