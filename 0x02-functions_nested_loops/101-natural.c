@@ -3,7 +3,7 @@
 /**
  * main - prints all multiples of 3 or 5 till 1024
  *
- * Return: Always (success)
+ * Return: Always 0 (success)
  */
 
 int main(void)
@@ -14,7 +14,7 @@ int main(void)
 	{
 		if ((i % 3 == 0) || (i % 5 == 0))
 		{
-			z +=1;
+			z += 1;
 		}
 		i++;
 	}
