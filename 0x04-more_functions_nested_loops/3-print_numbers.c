@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _numbers - prints numbers from 0 to 9 
- * @j: character used to check 
+ *print_numbers - prints numbers from 0 to 9 
+ * 
  * Return: Numbers 0 upto 9
  */
 
