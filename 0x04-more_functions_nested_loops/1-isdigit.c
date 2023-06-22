@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
  * _isdigit - checks for a digit from 0 through 9
@@ -9,12 +8,9 @@
 
 int _isdigit(int c)
 {
-	for (c = 0; c <= 9, c++)
+	if (c >= 48 && c <= 57)
 	{
-		if (isdigit(c))
-		{
-			return (1);
-		}
-		return (0);
+		return (1);
 	}
+	return (0);
 }
