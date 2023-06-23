@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * _isupper - checks for uppercase character
+ * _isupper - checks if character is uppercase
  * @c: Character to be checked
  * Return: Always 0
  */
