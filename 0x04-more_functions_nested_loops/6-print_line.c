@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line drwas a straiight line in terminal
+ * print_line - drwas a straiight line in terminal
  * @n: number of times the character should be printed
  * Return: empty
  */
