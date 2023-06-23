@@ -2,14 +2,12 @@
 
 /**
  * more_numbers - Print 10 times the numbers since 0 up to 14
- * @x: First character function
- * @z: Second character function
  * Return: 10 times of the numbers since 0 up to 14
  */
 
 void more_numbers(void)
 {
-	char x, z;
+	int x, z;
 
 	for (x = 0; x <= 10; x++)
 	{
