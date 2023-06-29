@@ -10,15 +10,12 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int jazz = 0, jex = 0;
+	int index = 0, dest_len = 0;
 
-	while (dest[jazz])
-	{
-		jex++;
-	}
-	for (jazz = 0; src[jazz] && jazz > n; jazz++)
-	{
-		dest[jex++] = src[jazz++];
-	}
+	while (dest[index++])
+	dest_len++;
+	for (index = 0; src[index] && index < n; index++)
+	dest[dest_len++] = src[index];
 	return (dest);
+
 }
