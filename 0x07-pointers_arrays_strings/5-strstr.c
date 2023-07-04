@@ -10,15 +10,24 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
-
-	for (i = 0; needle[i] != '\0'; i++)
+/*function finds the first occurrence of the*/
+/*substring needle in the string haystack.*/
+  /*The terminating null bytes (\0) are not compared*/
+	for (; *haystack != '\0'; haystack++)
 	{
-		for (j = 0; haystack[j] != '\0'; j++)
+		char *i = haystack;
+		char *j = needle;
+
+		/*finds the first occurrence of the substring needle in the string haystack*/
+		while (*i == *j && *j != '\0')
 		{
-			if (needle[i] == haystack[j])
-				return (needle + i);
+			i++;
+			j++;
 		}
+		if (*j == '\0')
+			/*Returns a pointer to the beginning of the located substring*/
+			return (haystack);
 	}
+	/*NULL if the substring is not found*/
 	return (NULL);
 }
