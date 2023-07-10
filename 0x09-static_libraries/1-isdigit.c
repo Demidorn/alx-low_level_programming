@@ -11,10 +11,8 @@ int _isdigit(int c)
 {
 	for (c = '0'; c <= '9'; c++)
 	{
-		if (isdigit(c))
-		
+		if (isdigit(c)
 			return (1);
-		
 	}
 	return (0);
 }
