@@ -5,6 +5,7 @@
 /**
  * malloc_checked - allocates memory
  * @b: size to allocate
+ *
  * Return: Nothing
  */
 
