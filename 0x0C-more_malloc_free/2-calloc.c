@@ -6,7 +6,7 @@
  * @nmemb: number of members
  * @size: size of bytes
  *
- * Return: Always 0 (success)
+ * Return: ...
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
