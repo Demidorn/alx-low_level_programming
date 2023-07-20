@@ -1,5 +1,5 @@
-#ifndef _HEADER_
-#define _HEADER_
+#ifndef HEADER_H
+#define HEADER_H
 
 /**
  * struct op - Struct op
