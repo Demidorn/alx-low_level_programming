@@ -6,7 +6,7 @@
  * print_dog - prints all data of the dog
  * @d: dog struct
  *
- * Return: nothing
+ * Return: Void
  */
 
 void print_dog(struct dog *d)
