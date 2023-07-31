@@ -18,8 +18,9 @@ void free_listint2(listint_t **head)
 		return;
 
 	d = *head;
+	/*d = malloc(sizeof(listsint_t));*/
 
-	while (head != NULL)
+	while (d != NULL)
 	{
 		new = d;
 		d = d->next;
