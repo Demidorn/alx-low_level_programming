@@ -13,7 +13,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
-	int read_status, result, file;
+	size_t read_status, result, file;
 
 	buffer = malloc(letters);
 
@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	file = open(filename, O_RDONLY);
+	file = popen(filename, O_RDONLY);
 
 	if (file == -1)
 		return (0);
