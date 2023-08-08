@@ -1,4 +1,8 @@
 #include "main.h"
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * read_textfile - reads a text file
@@ -11,9 +15,9 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
-	size_t read_status, result, file;
+	ssize_t read_status, result, file;
 
-	buffer = malloc(letters);
+	buffer = malloc(letters + 1);
 
 	if (buffer == NULL)
 		return (0);
@@ -21,15 +25,19 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	file = popen(filename, O_RDONLY);
+	file = open(filename, O_RDONLY);
 
 	if (file == -1)
+	{
+		free(buffer);
 		return (0);
+	}
 
 	result = read(file, buffer, letters);
 
 	read_status = write(STDOUT_FILENO, buffer, result);
 	close(file);
+	free(buffer);
 
 	return (read_status);
 }
