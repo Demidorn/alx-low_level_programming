@@ -1,5 +1,8 @@
 #include "main.h"
 
+static void write_copy(char *file, int fd, char *buf, int len);
+static ssize_t read_file(char *file, char **buffer, int fd);
+
 /**
  * main - entry point
  * @argc: argument
