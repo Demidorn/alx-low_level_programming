@@ -1,6 +1,5 @@
 #include "lists.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 /**
  * print_dlistint - prints all the elements of a dlistint_t list
  * @h: start node of the list
