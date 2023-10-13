@@ -1,6 +1,7 @@
 #include "lists.h"
+
 /**
- * print_dlistint - prints doulbly linked list
+ * print_dlistint - prints all the elements of a dlistint_t list
  * @h: start node of the list
  *
  * Return: items of a linked list
